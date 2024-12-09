@@ -1,0 +1,107 @@
+
+
+section.contact .icon-envelope{
+    color: var(--subtitle);
+    margin-right: 1rem;
+    font-size: 1.8rem;
+}
+section.contact h1{
+    color: var(--title);
+    margin-bottom: 1rem;
+    font-size: 2.1rem;
+}
+section.contact p{
+    color: var(--subtitle);
+    font-size: 0.9rem;
+    margin-bottom: 3rem;
+}
+section.contact label{
+    color: var(--subtitle);
+}
+section.contact #email, section.contact #message{
+    all: unset;
+    background-color: rgba(63 63 70 0.15);
+    border: 1px solid rgb(63 63 70);
+    width: 16rem;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+    font: 1.1rem;
+}
+.light section.contact #email,.light section.contact #message{
+    color: black;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.071);
+    border: 1px solid gray;
+}
+.light section.contact #email:hover,.light section.contact #message:hover,
+.light section.contact #email:focus,.light section.contact #message:focus{
+    border-color: black;
+}
+section.contact #email:focus, section.contact #message:focus{
+    border: 1px solid rgb(45 212 191);
+}
+
+section.contact #email:hover, section.contact #message:hover{
+    border: 1px solid rgb(45 212 191);
+
+}
+section.contact #message{
+    min-height: 9rem;
+    resize: vertical;
+}
+section.contact button.submit{
+    background-color: rgba(36, 37, 46, 1);
+    text-align: center;
+    padding: 0.75rem 2rem;
+    font-size: 1.05rem;
+    text-transform: capitalize;
+    transition: 0.3s;
+    margin-top: 1rem;
+    border: 1px solid rgb(62, 62, 70);
+}
+section.contact button.submit:hover{
+    scale: 0.97;
+}
+.animation Lottie{
+    height: 50vh;
+    
+}
+
+
+
+
+/* ===========================
+Responsive Design
+============================== */
+
+
+@media (max-width: 600px) {
+    section.contact .form{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+
+    }
+    section.contact .form div.flex{
+        flex-direction: column;
+        align-items: start;
+        
+    }
+    section.contact #email, section.contact #message{
+        width: 100%;
+        margin-left: 0;
+        padding: 0.7rem 1rem;
+        margin-top: 1rem;
+    }
+    section.contact button.submit{
+        width: 30%;
+        align-self: center;
+    }
+
+
+    section.contact .animation{
+        display: none;
+    }
+    
+}

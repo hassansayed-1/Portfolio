@@ -1,0 +1,164 @@
+/* 
+******************************
+table of contents
+******************************
+
+1- Header Design
+2- Modal & pop up
+3- Button & icon
+4- Responsive Design (media query)
+
+*/
+
+
+
+
+/* ===================
+1- Header Design
+======================*/
+
+
+header{
+    justify-content: space-between;
+    padding: 0 2.4rem;
+    margin-top: 1.2rem;
+}
+header nav{
+    background-color: var(--bgHeader);
+    padding: 0.77rem 1.6rem;
+    border-radius: 55px;
+    box-shadow: 1px 1px 5px rgba(53, 50, 50, 0.3);
+}
+header ul.flex{
+    gap: 16px;
+}
+header ul li a{
+    font-family: 'Roboto', Arial, sans-serif;
+    color: var(--title);
+    font-weight: 550;
+    font-size: 13px;
+    transition: 0.2s;
+}
+header ul li a:hover{
+    color: var(--blue);
+    font-size: 14px;
+}
+
+
+
+
+
+
+/*======================
+2- Modal & pop up
+========================*/
+
+
+header .fixed{
+    position: fixed;
+    inset: 0;
+    /* z-index: 11; */
+    background-color: rgba(40, 40, 48, 0.91);
+    backdrop-filter: blur(4px);
+}
+header ul.modal{
+    animation: mymove 0.77s 1;
+    width: 75%;
+    margin-inline: auto;
+    background-color: var(--secondary);
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+}
+@keyframes mymove {
+    0% {scale: 0;}
+    60%{scale: 1.2;}
+    100%{scale: 1;}
+}
+header ul.modal li{
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.77rem;
+    padding-top: 0.5rem;
+}
+header ul.modal li:last-child{
+    border: none;
+}
+header ul.modal li:first-child{
+    border: none;
+    text-align: right;
+    padding-bottom: 0;
+    padding-top: 0.2rem;
+    margin-bottom: -1rem;
+}
+header ul.modal li a{
+    font-size: 1rem;
+}
+header button.menu{
+    display: none;
+}
+
+
+
+
+
+/* =====================
+3- Buttons & Icons
+======================== */
+
+
+header button{
+    font-size: 1.2rem;
+}
+.icon-close{
+    font-size: 1.5rem;
+    color: var(--subtitle);
+    transition: 0.2s;
+}
+.icon-close:hover{
+    font-size: 1.7rem;
+    color: crimson;
+    rotate: 180deg;
+}
+header button.icon-menu, header button.moon{
+    background-color: var(--bgHeader);
+    border-radius: 50%;
+    height: 2.4rem;
+    width: 2.4rem;
+    color: var(--subtitle);
+    border: 1px solid rgba(244, 165, 96, 0.249);
+    justify-content: center;
+    text-align: center;
+    transition: 0.2s;
+    box-shadow: 1px 1px 20px rgba(10, 0, 87, 0.214);
+    
+}
+header .icon-menu:hover, header button.moon:hover{
+    color: var(--title);
+    border: 1px solid rgb(244, 165, 96);
+}
+
+.icon-sun{
+    color: rgba(255, 166, 0, 0.719);
+     
+}
+
+
+
+
+
+/* =====================
+4- Responsive design (media query)
+======================== */
+
+
+@media (max-width: 700px) {
+    header nav{
+        display: none;
+    }
+    header button.menu{
+        display: block;
+    }
+
+}
+
+
