@@ -1,4 +1,3 @@
-import React from 'react';
 import './hero.css';
 import Lottie from "lottie-react";
 import developerAnimation2 from "../../../public/animation/developerAnimation2.json";

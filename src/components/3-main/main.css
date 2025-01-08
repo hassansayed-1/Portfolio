@@ -103,8 +103,12 @@ main .right .icon-github:hover, main .right .icon-link:hover{
 main .right a.link{
     color: var(--blue);
     margin-right: 12px;
+    position: relative;
+    top: -2px;
 }
-
+.icon-arrow-right{
+    align-self: flex-end;
+}
 
 
 /* ====================================

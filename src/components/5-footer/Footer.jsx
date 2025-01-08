@@ -1,6 +1,5 @@
-import React from 'react';
 import './footer.css';
-const Footer = () => {
+export default function Footer() {
     return (
         <footer className='flex'>
             <div>
@@ -17,4 +16,3 @@ const Footer = () => {
         </footer>
     )
 }
-export default Footer;

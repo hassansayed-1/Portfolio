@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './main.css';
 import { allProjects } from './allProjects';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -40,6 +40,7 @@ const Main = () => {
             <div className="flex right">
                 {arr.map((item) => {
                     return (
+                        // eslint-disable-next-line react/jsx-key
                         <AnimatePresence>
                             <motion.article
                                 layout
