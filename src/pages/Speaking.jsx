@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Header from '../components/1-header/Header'
 import Footer from '../components/5-footer/Footer'
 import Hero from '../components/2-hero/Hero'
+import {Helmet, HelmetProvider} from "react-helmet-async"
 
 
 export default function About() {
@@ -16,13 +17,19 @@ export default function About() {
     const [showScroll, setshowscroll] = useState(false);
     return(
         <div id='up' className='container'>
-            <Header />
-            <Hero />
-            <Footer />
+            <HelmetProvider>
+                <Helmet>
+                    <title>Speaking</title>
+                    <meta name='description' content='Speaking' />
+                </Helmet>
+                <Header />
+                <Hero />
+                <Footer />
 
-            <a href="#up" style={{opacity: showScroll? "1": "0", transition: "1npms"}}>
-                <button className='scroll2top icon-keyboard_arrow_up'></button>
-            </a>
+                <a href="#up" style={{opacity: showScroll? "1": "0", transition: "1npms"}}>
+                    <button className='scroll2top icon-keyboard_arrow_up'></button>
+                </a>
+            </HelmetProvider>
       
         </div>
     )

@@ -8,8 +8,6 @@ import Projects from "./pages/Projects.jsx"
 import Speaking from "./pages/Speaking.jsx"
 import Uses from "./pages/Uses.jsx"
 
-
-
 const root = document.getElementById("root");
 
 
