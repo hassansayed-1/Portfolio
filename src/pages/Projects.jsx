@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Header from '../components/1-header/Header'
 import Footer from '../components/5-footer/Footer'
 import Hero from '../components/2-hero/Hero'
+import {Helmet, HelmetProvider} from "react-helmet-async"
 
 
 export default function About() {
@@ -16,6 +17,12 @@ export default function About() {
     const [showScroll, setshowscroll] = useState(false);
     return(
         <div id='up' className='container'>
+            <HelmetProvider>
+                <Helmet>
+                    <title>Projects</title>
+                    <meta name='description' content='What I do' />
+                </Helmet>
+            </HelmetProvider>
             <Header />
             <Hero />
             <Footer />
