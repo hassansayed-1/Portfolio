@@ -20,14 +20,13 @@ export default function Header() {
 
     return (
         <header className='flex'>
-            <button onClick={() => {
-                setshowModal(true)
-            }} className='menu icon-menu'/>
-            <div style={{width: "40px"}} />
-
+            <NavLink to={'/'}>
+                <img src="./cropped-me.png" alt="photo_error" />
+            </NavLink>
+            
             <nav>
                 <ul className='flex'>
-                    <li>
+                <li>
                         <NavLink to={"/About"}>About
                         <span></span>
                         </NavLink>
@@ -55,17 +54,22 @@ export default function Header() {
                 </ul>
             </nav>
 
-            <button onClick={() => {
-                if(theme === "dark"){
-                    localStorage.setItem("currentTheme", "light");
-                    setTheme(localStorage.getItem("currentTheme"));
-                }else{
-                    localStorage.setItem("currentTheme", "dark");
-                    setTheme(localStorage.getItem("currentTheme"));
-                }
-            }} className='moon flex'>
-                <span className={theme === "dark" ? "icon-moon-o" : "icon-sun"}></span>
-            </button>
+            <div className='flex' style={{gap: "0.5rem"}}>
+                <button onClick={() => {
+                    setshowModal(true)
+                }} className='menu icon-menu'/>
+                <button onClick={() => {
+                    if(theme === "dark"){
+                        localStorage.setItem("currentTheme", "light");
+                        setTheme(localStorage.getItem("currentTheme"));
+                    }else{
+                        localStorage.setItem("currentTheme", "dark");
+                        setTheme(localStorage.getItem("currentTheme"));
+                    }
+                }} className='moon flex'>
+                    <span className={theme === "dark" ? "icon-moon-o" : "icon-sun"}></span>
+                </button>
+            </div>
 
             {showModal &&(
                 <div className='fixed'>

@@ -47,7 +47,8 @@ main .right{
     flex-wrap: wrap;
 }
 .card img{
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 .card h1{
     text-transform: capitalize;
@@ -71,7 +72,7 @@ main .right{
     border: none;
 }
 main .right .box{
-    padding: 1rem 0.4rem;
+    padding: 0.4rem 0.4rem;
 }
 main .right .icons{
     justify-content: space-between;
@@ -82,8 +83,8 @@ main .right .box h1{
 main .right .box p{
     color: var(--subtitle);
     font-size: 0.8rem;
-    margin-top: 0.7rem;
-    margin-bottom: 1.1rem;
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
 }
 main .right .twoicons{
     color: var(--subtitle);

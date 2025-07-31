@@ -1,4 +1,3 @@
-import React from 'react';
 import './contact.css';
 import Lottie from "lottie-react";
 import doneAnimation from "../../../public/animation/Animation - 1733494275246.json";
@@ -17,9 +16,9 @@ const Contact = () => {
         <section className='contact'>
             <h1>
                 <span className="icon-envelope"></span>
-                Contact us
+                Contact me
             </h1>
-            <p>Contact us for more information and Get notified when I publish something new.</p>
+            <p>Contact me for more information and Get notified when I publish something new.</p>
             <div style={{ justifyContent: 'space-between', gap: "4rem"}} className="flex">
                 <form onSubmit={handleSubmit} className='form'>
                     <div className='flex'>

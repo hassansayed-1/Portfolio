@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
-import Header from '../components/1-header/Header'
+import Header2 from '../components/1-header/Header2'
 import Footer from '../components/5-footer/Footer'
-import Hero from '../components/2-hero/Hero'
 import {Helmet, HelmetProvider} from "react-helmet-async"
 
 
@@ -22,8 +21,19 @@ export default function About() {
                     <title>Speaking</title>
                     <meta name='description' content='Speaking' />
                 </Helmet>
-                <Header />
-                <Hero />
+                <Header2 />
+                <div
+                style={{
+                    minHeight: "81vh", // Adjust as needed
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                }}
+            >
+                <h1 style={{ color: "var(--title)", textAlign: "center", margin: 0 }}>
+                    Coming soon........!
+                </h1>
+            </div>
                 <Footer />
 
                 <a href="#up" style={{opacity: showScroll? "1": "0", transition: "1npms"}}>

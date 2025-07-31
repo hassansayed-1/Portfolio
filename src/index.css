@@ -28,7 +28,7 @@ button:disabled{
     cursor: not-allowed;
 }
 :root{
-    --primary:black;
+    --primary:rgb(18, 17, 17);
     --secondary: rgb(24, 24, 27);
     --border: rgba(63, 63, 70, 0.4);
     --title: rgb(244, 244, 245);

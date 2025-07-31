@@ -80,7 +80,7 @@ Responsive Design
     section.contact .form{
         display: flex;
         flex-direction: column;
-        width: 85%;
+        width: 90%;
 
     }
     section.contact .form div.flex{
@@ -97,6 +97,8 @@ Responsive Design
     section.contact button.submit{
         width: 30%;
         align-self: center;
+        position: relative;
+        right: -1rem;
     }
 
 

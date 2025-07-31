@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './main.css';
 import { allProjects } from './allProjects';
 import { AnimatePresence, motion } from 'framer-motion';
+import { Link } from "react-router";
 
 
 const Main = () => {
@@ -42,6 +43,7 @@ const Main = () => {
                     return (
                         // eslint-disable-next-line react/jsx-key
                         <AnimatePresence>
+                            <Link to={`/project/${item.id}`} style={{ textDecoration: "none", color: "inherit" }}>
                             <motion.article
                                 layout
                                 initial={{ transform: "scale(0)" }}
@@ -65,6 +67,7 @@ const Main = () => {
                                     </div>
                                 </div>
                             </motion.article>
+                            </Link>
                         </AnimatePresence>
 
                     )

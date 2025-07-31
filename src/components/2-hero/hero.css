@@ -44,6 +44,9 @@ section.hero .icons{
     gap: 1.5rem;
     transition: 0.3s;
 }
+section.hero .icons .icon{
+    color: var(--subtitle);
+}
 section.hero .icons .icon:hover{
     opacity: 1;
     color: var(--icon-hover);

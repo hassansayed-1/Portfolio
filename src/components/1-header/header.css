@@ -20,12 +20,11 @@ table of contents
 
 header{
     justify-content: space-between;
-    padding: 0 2.4rem;
     margin-top: 1.2rem;
 }
 header nav{
     background-color: var(--bgHeader);
-    padding: 0.77rem 1.6rem;
+    padding: 0.7rem 1.6rem;
     border-radius: 55px;
     box-shadow: 1px 1px 5px rgba(53, 50, 50, 0.3);
 }
@@ -45,6 +44,14 @@ header ul li a:hover{
 }
 header ul .active{
     color: var(--blue);
+}
+header ul .active span{
+    position: absolute;
+    left: 0.25rem;
+    right: 0.25rem;
+    bottom: -14px;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(20, 184, 166, 0), rgba(0, 166, 255, 0.46), rgba(20, 184, 166, 0));
 }
 
 
@@ -127,25 +134,31 @@ header button.icon-menu, header button.moon{
     height: 2.4rem;
     width: 2.4rem;
     color: var(--subtitle);
-    border: 1px solid rgba(244, 165, 96, 0.249);
     justify-content: center;
     text-align: center;
     transition: 0.2s;
-    box-shadow: 1px 1px 20px rgba(10, 0, 87, 0.214);
+    box-shadow: 0px 0px 5px rgba(8, 2, 38, 0.163);
     
 }
 header .icon-menu:hover, header button.moon:hover{
     color: var(--title);
-    border: 1px solid rgb(244, 165, 96);
+    /* border: 1px solid rgb(244, 165, 96); */
 }
 
 .icon-sun{
-    color: rgba(255, 166, 0, 0.719);
+    /* color: rgba(255, 166, 0, 0.719); */
+    color: rgba(100, 200, 250, 0.8);
      
 }
 
 
-
+header a img{
+    width: 36px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding: 1px;
+    box-shadow: 2px 2px 40px rgba(203, 200, 200, 0.586) inset;
+}
 
 
 /* =====================

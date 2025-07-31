@@ -1,13 +1,17 @@
 import './footer.css';
+import {NavLink} from "react-router"
+
+
 export default function Footer() {
     return (
         <footer className='flex'>
             <div>
                 <ul className='flex'>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Speaking</a></li>
-                    <li><a href="">Uses</a></li>
+                    <li><NavLink to="/About">About</NavLink></li>
+                    <li><NavLink to="/Articles">Articles</NavLink></li>
+                    <li><NavLink to="/Experiences">Experiences</NavLink></li>
+                    {/* <li><NavLink to="/Speaking">Speaking</NavLink></li> */}
+                    <li><NavLink to="/Uses">Uses</NavLink></li>
                 </ul>
             </div>
             <div className=''>
