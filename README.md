@@ -81,14 +81,6 @@ Portfolio/
 └── package.json       # Project dependencies
 ```
 
-## 🔧 Available Scripts
-
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start development server |
-| `npm run build` | Build for production |
-| `npm run preview` | Preview production build |
-| `npm run lint` | Run ESLint checks |
 
 ## 📋 Features Included
 
@@ -108,15 +100,10 @@ This project uses Vite's official React plugin for optimal development experienc
 
 I'd love to hear from you! Feel free to reach out:
 
-- 📧 Email: [your-email@example.com]
-- 💼 LinkedIn: [your-linkedin-profile]
+- 📧 Email: hs9832227@gmail.com
+- 💼 LinkedIn: https://www.linkedin.com/in/hassansayed1
 - 🐙 GitHub: [@hassansayed-1](https://github.com/hassansayed-1)
-- 🌐 Website: [your-website.com]
+- 🌐 Website: https://hassan-sayed.web.app
 
-## 📄 License
 
-This project is open source and available under the MIT License.
 
----
-
-**Made with ❤️ by Hassan Sayed**
